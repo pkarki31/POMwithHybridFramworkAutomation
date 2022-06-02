@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-01T22:26:27 IST" name="Command line suite" finished-at="2022-06-01T22:29:54 IST" duration-ms="206487">
+    <groups>
+    </groups>
+    <test started-at="2022-06-01T22:26:27 IST" name="Command line test" finished-at="2022-06-01T22:29:54 IST" duration-ms="206487">
+      <class name="com.experian.qa.testcases.ConsolidatingOtherDebtsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:27:06 IST" name="setup" finished-at="2022-06-01T22:27:23 IST" duration-ms="17379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidBorrowAmountLessThen500Test(java.lang.String)[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:27:23 IST" name="invalidBorrowAmountLessThen500Test" data-provider="data-provider-borrowerAmt" finished-at="2022-06-01T22:27:33 IST" duration-ms="10229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBorrowAmountLessThen500Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:27:33 IST" name="tearDown" finished-at="2022-06-01T22:27:35 IST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:27:35 IST" name="setup" finished-at="2022-06-01T22:27:54 IST" duration-ms="19444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidBorrowAmountLessThen500Test(java.lang.String)[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:27:54 IST" name="invalidBorrowAmountLessThen500Test" data-provider="data-provider-borrowerAmt" finished-at="2022-06-01T22:28:03 IST" duration-ms="9214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBorrowAmountLessThen500Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:28:03 IST" name="tearDown" finished-at="2022-06-01T22:28:04 IST" duration-ms="1131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:28:04 IST" name="setup" finished-at="2022-06-01T22:28:23 IST" duration-ms="19072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidBorrowAmountLessThen500Test(java.lang.String)[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:28:23 IST" name="invalidBorrowAmountLessThen500Test" data-provider="data-provider-borrowerAmt" finished-at="2022-06-01T22:28:36 IST" duration-ms="12820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBorrowAmountLessThen500Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:28:36 IST" name="tearDown" finished-at="2022-06-01T22:28:37 IST" duration-ms="1129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:28:37 IST" name="setup" finished-at="2022-06-01T22:28:54 IST" duration-ms="16306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidBorrowAmountLessThen500Test(java.lang.String)[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:28:54 IST" name="invalidBorrowAmountLessThen500Test" data-provider="data-provider-borrowerAmt" finished-at="2022-06-01T22:29:05 IST" duration-ms="11332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[text]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBorrowAmountLessThen500Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:29:05 IST" name="tearDown" finished-at="2022-06-01T22:29:06 IST" duration-ms="1128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:29:06 IST" name="setup" finished-at="2022-06-01T22:29:24 IST" duration-ms="17970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidBorrowAmountMoreThen50000Test()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:29:24 IST" name="invalidBorrowAmountMoreThen50000Test" finished-at="2022-06-01T22:29:36 IST" duration-ms="11696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBorrowAmountMoreThen50000Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:29:36 IST" name="tearDown" finished-at="2022-06-01T22:29:37 IST" duration-ms="1130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:29:37 IST" name="setup" finished-at="2022-06-01T22:29:53 IST" duration-ms="15847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateTitleTest()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:29:53 IST" name="validateTitleTest" finished-at="2022-06-01T22:29:53 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.experian.qa.testcases.ConsolidatingOtherDebtsTest@5b12b668]" started-at="2022-06-01T22:29:53 IST" name="tearDown" finished-at="2022-06-01T22:29:54 IST" duration-ms="1123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.experian.qa.testcases.ConsolidatingOtherDebtsTest -->
+      <class name="com.experian.qa.testcases.TermsAndConditionsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.experian.qa.testcases.TermsAndConditionsTest@77888435]" started-at="2022-06-01T22:26:27 IST" name="setup" finished-at="2022-06-01T22:26:52 IST" duration-ms="24193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateTitleTest()[pri:0, instance:com.experian.qa.testcases.TermsAndConditionsTest@77888435]" started-at="2022-06-01T22:26:52 IST" name="validateTitleTest" finished-at="2022-06-01T22:27:05 IST" duration-ms="13037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.experian.qa.testcases.TermsAndConditionsTest@77888435]" started-at="2022-06-01T22:27:05 IST" name="tearDown" finished-at="2022-06-01T22:27:06 IST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.experian.qa.testcases.TermsAndConditionsTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
