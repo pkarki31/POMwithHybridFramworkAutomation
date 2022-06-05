@@ -1,4 +1,4 @@
-com/experian/qa/util/TestUtil.class
-com/experian/qa/base/TestBase.class
 com/experian/qa/pages/ConsolidatingOtherDebts.class
 com/experian/qa/pages/TermsAndConditions.class
+com/experian/qa/util/TestUtil.class
+com/experian/qa/base/TestBase.class

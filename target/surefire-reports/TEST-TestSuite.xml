@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="TestSuite" time="68.333" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="TestSuite" time="24.323" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -17,6 +17,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/pkarki10/Documents/my doc/ExperianAutomationAssessment"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="groups" value="SmokeTest"/>
     <property name="java.runtime.version" value="11.0.11+9"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="os.arch" value="x86_64"/>
@@ -43,7 +44,7 @@
     <property name="java.class.path" value="/opt/maven/apache-maven-3.8.2/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dgroups=SmokeTest"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,11 +61,8 @@
     <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="validateTitleTest" time="13.039"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="10.229"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="9.214"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="12.82"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="11.332"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountMoreThen50000Test" time="11.695"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="validateTitleTest" time="0.004"/>
+  <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="validateTitleTest" time="10.171"/>
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCarInsuranceTabtest" time="8.341"/>
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCreditCardTabtest" time="3.21"/>
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyLoansTabtest" time="2.601"/>
 </testsuite>

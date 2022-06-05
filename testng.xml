@@ -3,9 +3,28 @@
 <suite name="FREE CRM Application Test Automation Test Suite">
 
 
-    <test name="Experian Automation ">
+    <test name="Experian Automation Smoke Test ">
+        <groups>
+            <run>
+                <include name="SmokeTest"></include>
+            </run>
+
+        </groups>
         <packages>
             <package name="com.experian.qa.testcases"/>
         </packages>
     </test>
+
+    <test name="Experian Automation Functional">
+        <groups>
+            <run>
+                <include name="FunctionalTest"></include>
+            </run>
+
+        </groups>
+        <packages>
+            <package name="com.experian.qa.testcases"/>
+        </packages>
+    </test>
+
 </suite>

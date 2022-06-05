@@ -10,10 +10,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -28,7 +26,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
         super();
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"FunctionalTest"})
     public void setup(){
 
         initialization();
@@ -37,7 +35,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
     }
 
 
-    @Test(dataProvider = "data-provider-borrowerAmt")
+    @Test(dataProvider = "data-provider-borrowerAmt",groups = {"FunctionalTest"})
     public void invalidBorrowAmountLessThen500Test(String amount) {
 
         //  System.out.println("..... "+debts.validateCurrentUrl());
@@ -97,7 +95,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
         }
         }
 
-    @Test
+    @Test(groups = {"FunctionalTest"})
     public void invalidBorrowAmountMoreThen50000Test() {
 
         homePage.cookiesPrompt.click();
@@ -148,7 +146,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
 
 
 
-        @AfterMethod
+        @AfterMethod(groups = {"FunctionalTest"})
         public void tearDown(){
 
             driver.quit();

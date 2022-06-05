@@ -5,6 +5,7 @@ import com.experian.qa.pages.ConsolidatingOtherDebts;
 import com.experian.qa.pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,14 +21,14 @@ public class HomePageTest extends TestBase {
         super();
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"SmokeTest","FunctionalTest"})
     public void setup(){
 
         initialization();
         home = new HomePage();
     }
 
-    @Test
+    @Test(groups = {"SmokeTest","FunctionalTest"})
     public void verifyLoansTabtest(){
 
         home.cookiesPrompt.click();
@@ -54,7 +55,7 @@ public class HomePageTest extends TestBase {
         }
     }
 
-    @Test
+    @Test(groups = {"SmokeTest","FunctionalTest"})
     public void verifyCreditCardTabtest(){
 
         home.cookiesPrompt.click();
@@ -82,7 +83,7 @@ public class HomePageTest extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"SmokeTest","FunctionalTest"})
     public void verifyCarInsuranceTabtest(){
 
         home.cookiesPrompt.click();
@@ -109,7 +110,7 @@ public class HomePageTest extends TestBase {
 
     }
 
-    @AfterMethod
+    @AfterMethod(groups = {"SmokeTest","FunctionalTest"})
     public void tearDown(){
 
         driver.quit();

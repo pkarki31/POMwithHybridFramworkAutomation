@@ -4,9 +4,7 @@ import com.experian.qa.base.TestBase;
 import com.experian.qa.pages.ConsolidatingOtherDebts;
 import com.experian.qa.pages.TermsAndConditions;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class TermsAndConditionsTest extends TestBase {
 
@@ -18,14 +16,14 @@ public class TermsAndConditionsTest extends TestBase {
     }
 
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"SmokeTest","FunctionalTest"})
     public void setup(){
 
         initialization();
         termsAndConditions = new TermsAndConditions();
     }
 
-    @Test
+    @Test(groups = {"SmokeTest","FunctionalTest"})
     public void validateTitleTest(){
 
         System.out.println("hi ...");
@@ -37,7 +35,7 @@ public class TermsAndConditionsTest extends TestBase {
         Assert.assertEquals(prop.getProperty("termsAndConditionPageTitle"),title);
     }
 
-    @AfterMethod
+    @AfterMethod(groups = {"SmokeTest","FunctionalTest"})
     public void tearDown(){
 
         driver.quit();
