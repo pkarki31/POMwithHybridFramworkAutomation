@@ -4,9 +4,8 @@
 
 
     <test name="Experian Automation ">
-        <classes>
-            <class name="com.experian.qa.testcases.ConsolidatingOtherDebtsTest"></class>
-            <class name="com.experian.qa.testcases.TermsAndConditionsTest"></class>
-        </classes>
+        <packages>
+            <package name="com.experian.qa.testcases"/>
+        </packages>
     </test>
 </suite>

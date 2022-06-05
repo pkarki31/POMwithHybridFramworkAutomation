@@ -2,6 +2,7 @@ package com.experian.qa.testcases;
 
 import com.experian.qa.base.TestBase;
 import com.experian.qa.pages.ConsolidatingOtherDebts;
+import com.experian.qa.pages.HomePage;
 import com.experian.qa.util.TestUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,9 +17,12 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 
-public class ConsolidatingOtherDebtsTest extends TestBase {
+public class
+
+ConsolidatingOtherDebtsTest extends TestBase {
 
     ConsolidatingOtherDebts  debts;
+    HomePage homePage;
 
     public ConsolidatingOtherDebtsTest(){
         super();
@@ -29,24 +33,19 @@ public class ConsolidatingOtherDebtsTest extends TestBase {
 
         initialization();
         debts = new ConsolidatingOtherDebts();
+        homePage= new HomePage();
     }
 
-    @Test
-    public void validateTitleTest(){
-
-        System.out.println("hi ...");
-
-        String title = debts.validateTitle();
-
-        Assert.assertEquals("Experian - Loans",title);
-    }
 
     @Test(dataProvider = "data-provider-borrowerAmt")
     public void invalidBorrowAmountLessThen500Test(String amount) {
 
         //  System.out.println("..... "+debts.validateCurrentUrl());
 
-            debts.cookiesPrompt.click();
+
+            homePage.cookiesPrompt.click();
+
+            homePage.loansTab.click();
 
             debts.consolidatingOtherDebtsIcon.click();
 
@@ -101,7 +100,9 @@ public class ConsolidatingOtherDebtsTest extends TestBase {
     @Test
     public void invalidBorrowAmountMoreThen50000Test() {
 
-        debts.cookiesPrompt.click();
+        homePage.cookiesPrompt.click();
+
+        homePage.loansTab.click();
 
         debts.consolidatingOtherDebtsIcon.click();
 

@@ -7,17 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.awt.desktop.SystemEventListener;
-import java.util.concurrent.TimeUnit;
-
 public class ConsolidatingOtherDebts extends TestBase {
 
-    @FindBy(xpath = "//*[@id=\"main-content\"]/div/div[2]/div[2]/section[2]/div/a[1]")
+   // @FindBy(xpath = "//*[@id=\"main-content\"]/div/div[2]/div[2]/section[2]/div/a[1]")
+    @FindBy(xpath = "//*[@id=\"search-form\"]/div[3]/div/div[2]/div/fieldset/div/div[1]/label")
     public WebElement consolidatingOtherDebtsIcon;
 
-
-    @FindBy(id="ensCloseBanner")
-    public WebElement cookiesPrompt;
+//    @FindBy(id="ensCloseBanner")
+//    public WebElement cookiesPrompt;
 
     @FindBy(xpath="//input[@name='LoanDetails.Amount']")
     public WebElement borrowAmountInput;
@@ -30,7 +27,6 @@ public class ConsolidatingOtherDebts extends TestBase {
 
     @FindBy(xpath="//*[text()='Tell us your status']")
     public WebElement tellUsStatus;
-
 
     @FindBy(xpath="//select[@name='Applicant.EmploymentStatus']")
     public WebElement employmentStatus;
@@ -58,12 +54,15 @@ public class ConsolidatingOtherDebts extends TestBase {
 
         System.out.println("after consolidatingOtherDebtsIcon click  ...");
 
+
         return driver.getTitle();
     }
 
     public boolean validateCurrentUrl(){
 
-        cookiesPrompt.click();
+        //        homcookiesPrompt.click();
+
+      //  loansTab.click();
 
         consolidatingOtherDebtsIcon.click();
 
