@@ -38,8 +38,6 @@ ConsolidatingOtherDebtsTest extends TestBase {
     @Test(dataProvider = "data-provider-borrowerAmt",groups = {"FunctionalTest"})
     public void invalidBorrowAmountLessThen500Test(String amount) {
 
-        //  System.out.println("..... "+debts.validateCurrentUrl());
-
 
             homePage.cookiesPrompt.click();
 
@@ -57,24 +55,24 @@ ConsolidatingOtherDebtsTest extends TestBase {
 
 
         try {
-            System.out.println("debts.invalidAmountErrorMsg : " + debts.invalidAmountErrorMsg.isDisplayed());
+
 
             String errorMsg = debts.invalidAmountErrorMsg.getText();
 
-            System.out.println("errorMsg : " + errorMsg);
+
 
             if (errorMsg.equalsIgnoreCase(prop.getProperty("invalidAmountErrorMsg"))) {
 
-                System.out.println("inside  invalidAmountErrorMsg ...");
+
 
                 if (driver.getCurrentUrl().contains("results")) {
 
-                    System.out.println("inside  assert false  ...");
+
 
                     assert false;
                 } else {
 
-                    System.out.println("inside  assert true  ...");
+
 
                     assert true;
                 }
@@ -85,7 +83,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
                 assert false;
             }
 
-            //  debts.validateCurrentUrl();
+
 
         }
         catch(NoSuchElementException e){
@@ -93,6 +91,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
             System.out.println("inside  assert false from catch  ...");
                 assert false;
         }
+
         }
 
     @Test(groups = {"FunctionalTest"})
@@ -118,12 +117,8 @@ ConsolidatingOtherDebtsTest extends TestBase {
 
                 if (driver.getCurrentUrl().contains("results")) {
 
-                    System.out.println("inside  assert false  ...");
-
                     assert false;
                 } else {
-
-                    System.out.println("inside  assert true  ...");
 
                     assert true;
                 }
@@ -134,7 +129,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
             System.out.println("inside  assert false from catch  ...");
             assert false;
         }
-       //   debts.validateCurrentUrl();
+
     }
 
 
@@ -146,9 +141,9 @@ ConsolidatingOtherDebtsTest extends TestBase {
 
 
 
-        @AfterMethod(groups = {"FunctionalTest"})
+    @AfterMethod(groups = {"FunctionalTest"})
         public void tearDown(){
 
-            driver.quit();
+            driver.close();
         }
 }

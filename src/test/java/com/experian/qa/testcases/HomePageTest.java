@@ -37,7 +37,7 @@ public class HomePageTest extends TestBase {
 
         String loanTitle = driver.getTitle();
 
-       System.out.println("loanTitle : "+loanTitle);
+        System.out.println("loanTitle : "+loanTitle);
 
        String loanUrl = driver.getCurrentUrl();
 

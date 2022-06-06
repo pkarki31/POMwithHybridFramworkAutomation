@@ -38,8 +38,6 @@ public class TermsAndConditions extends TestBase {
 
             driver.switchTo().window(tabs2.get(1));
 
-            System.out.println("after terms and condition click  ...");
-
 
         }
 

@@ -26,11 +26,7 @@ public class TermsAndConditionsTest extends TestBase {
     @Test(groups = {"SmokeTest","FunctionalTest"})
     public void validateTitleTest(){
 
-        System.out.println("hi ...");
-
         String title = termsAndConditions.validateTitle();
-
-        System.out.println("title : "+title);
 
         Assert.assertEquals(prop.getProperty("termsAndConditionPageTitle"),title);
     }
