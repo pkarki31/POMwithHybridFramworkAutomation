@@ -15,11 +15,11 @@ public class TermsAndConditionsTest extends TestBase {
         super();
     }
 
-
+    @Parameters({"browser"})
     @BeforeMethod(groups = {"SmokeTest","FunctionalTest"})
-    public void setup(){
+    public void setup(String browser){
 
-        initialization();
+        initialization(browser);
         termsAndConditions = new TermsAndConditions();
     }
 

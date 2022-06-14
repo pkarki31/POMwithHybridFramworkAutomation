@@ -4,10 +4,7 @@ import com.experian.qa.base.TestBase;
 import com.experian.qa.pages.ConsolidatingOtherDebts;
 import com.experian.qa.pages.HomePage;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import static com.experian.qa.base.TestBase.driver;
 import static com.experian.qa.base.TestBase.initialization;
@@ -22,9 +19,10 @@ public class HomePageTest extends TestBase {
     }
 
     @BeforeMethod(groups = {"SmokeTest","FunctionalTest"})
-    public void setup(){
+    @Parameters({"browser"})
+    public void setup(String browser){
 
-        initialization();
+        initialization(browser);
         home = new HomePage();
     }
 

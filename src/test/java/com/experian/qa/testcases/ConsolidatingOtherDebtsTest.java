@@ -27,9 +27,10 @@ ConsolidatingOtherDebtsTest extends TestBase {
     }
 
     @BeforeMethod(groups = {"FunctionalTest"})
-    public void setup(){
+    @Parameters({"browser"})
+    public void setup(String browser){
 
-        initialization();
+        initialization(browser);
         debts = new ConsolidatingOtherDebts();
         homePage= new HomePage();
     }

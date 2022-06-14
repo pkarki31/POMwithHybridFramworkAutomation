@@ -4,6 +4,7 @@
 
 
     <test name="Experian Automation Smoke Test ">
+        <parameter name = "browser" value="chrome"/>
         <groups>
             <run>
                 <include name="SmokeTest"></include>
@@ -11,11 +12,15 @@
 
         </groups>
         <packages>
+
             <package name="com.experian.qa.testcases"/>
         </packages>
+
+
     </test>
 
     <test name="Experian Automation Functional">
+        <parameter name = "browser" value="chrome"/>
         <groups>
             <run>
                 <include name="FunctionalTest"></include>

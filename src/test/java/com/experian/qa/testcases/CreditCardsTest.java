@@ -4,6 +4,7 @@ import com.experian.qa.base.TestBase;
 import com.experian.qa.pages.CreditCards;
 import com.experian.qa.pages.HomePage;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class CreditCardsTest extends TestBase {
@@ -15,9 +16,10 @@ public class CreditCardsTest extends TestBase {
     }
 
     @BeforeMethod
-    public void setup(){
+    @Parameters({"browser"})
+    public void setup(String browser){
 
-        initialization();
+        initialization(browser);
         creditCards = new CreditCards();
     }
 

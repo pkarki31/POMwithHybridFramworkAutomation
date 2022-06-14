@@ -3,6 +3,8 @@ package com.experian.qa.base;
 import com.experian.qa.util.TestUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -27,7 +29,6 @@ public class TestBase {
 
             prop.load(fileInputStream);
 
-            System.out.println("browser : "+prop.getProperty("browser"));
 
         }
 
@@ -44,11 +45,12 @@ public class TestBase {
 
     }
 
-    public static void initialization(){
+    public static void initialization(String browser){
 
-        String browserName = prop.getProperty("browser");
+         browser = System.getProperty("browser", "chrome");
 
-        if(browserName.equals("chrome")){
+
+        if(browser.equalsIgnoreCase("chrome")){
 
             System.setProperty("webdriver.chrome.driver","Drivers/chromedriver");
 
@@ -61,10 +63,22 @@ public class TestBase {
 
             driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
+        }
 
+        else if (browser.equalsIgnoreCase("firefox")){
 
+            System.setProperty("webdriver.gecko.driver","Drivers/geckodriver");
+
+            driver = new FirefoxDriver();
+
+            driver.manage().window().maximize();
+
+            driver.get(prop.getProperty("baseUrl"));
+
+            driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
         }
+
 
 
     }
