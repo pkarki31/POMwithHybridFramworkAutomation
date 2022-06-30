@@ -1,2 +1,4 @@
 com/experian/qa/testcases/TermsAndConditionsTest.class
 com/experian/qa/testcases/ConsolidatingOtherDebtsTest.class
+com/experian/qa/testcases/CreditCardsTest.class
+com/experian/qa/testcases/HomePageTest.class

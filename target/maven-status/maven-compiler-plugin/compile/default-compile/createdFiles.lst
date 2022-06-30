@@ -1,4 +1,9 @@
+com/experian/qa/pages/CreditCards.class
+com/experian/qa/pages/Mortgages.class
 com/experian/qa/pages/ConsolidatingOtherDebts.class
 com/experian/qa/pages/TermsAndConditions.class
+com/experian/qa/pages/HomePage.class
+com/experian/qa/pages/CarFinance.class
 com/experian/qa/util/TestUtil.class
 com/experian/qa/base/TestBase.class
+com/experian/qa/pages/CarInsurance.class

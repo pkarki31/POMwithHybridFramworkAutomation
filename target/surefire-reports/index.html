@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyCarInsuranceTabtest">verifyCarInsuranceTabtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,7 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(3.5)">invalidBorrowAmountLessThen500Test(3.5)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(-3)">invalidBorrowAmountLessThen500Test(-3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -119,7 +133,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(-3)">invalidBorrowAmountLessThen500Test(-3)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(3.5)">invalidBorrowAmountLessThen500Test(3.5)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,11 +144,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.TermsAndConditionsTest" class="method navigator-link" hash-for-method="validateTitleTest">validateTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyCarInsuranceTabtest">verifyCarInsuranceTabtest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,6 +168,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.experian.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCarInsuranceTabtest">
+                  </a> <!-- verifyCarInsuranceTabtest -->
+                  <span class="method-name">verifyCarInsuranceTabtest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:10e6:d3c2:186a:2500%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5046ef01c53e362212039d57d705d4a3, clickElement {id=a4f96787-318a-48cd-9e8a-e56c189e9e2a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:53785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53785/devtoo..., se:cdpVersion: 103.0.5060.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (5046ef01c53e362212039d57d705d4a3)] -&gt; partial link text: insurance]
+Session ID: 5046ef01c53e362212039d57d705d4a3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.experian.qa.testcases.HomePageTest.verifyCarInsuranceTabtest(HomePageTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 44 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -167,10 +216,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidBorrowAmountLessThen500Test(3.5)">
-                  </a> <!-- invalidBorrowAmountLessThen500Test(3.5) -->
+                  <a name="invalidBorrowAmountLessThen500Test(-3)">
+                  </a> <!-- invalidBorrowAmountLessThen500Test(-3) -->
                   <span class="method-name">invalidBorrowAmountLessThen500Test</span>
-                  <span class="parameters">(3.5)</span>
+                  <span class="parameters">(-3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -191,10 +240,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidBorrowAmountLessThen500Test(-3)">
-                  </a> <!-- invalidBorrowAmountLessThen500Test(-3) -->
+                  <a name="invalidBorrowAmountLessThen500Test(3.5)">
+                  </a> <!-- invalidBorrowAmountLessThen500Test(3.5) -->
                   <span class="method-name">invalidBorrowAmountLessThen500Test</span>
-                  <span class="parameters">(-3)</span>
+                  <span class="parameters">(3.5)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -227,13 +276,6 @@
               <span class="class-name">com.experian.qa.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyCarInsuranceTabtest">
-                  </a> <!-- verifyCarInsuranceTabtest -->
-                  <span class="method-name">verifyCarInsuranceTabtest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyCreditCardTabtest">
@@ -354,46 +396,46 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCarInsuranceTabtest')
-data.setCell(0, 2, 'com.experian.qa.testcases.HomePageTest')
-data.setCell(0, 3, 10327);
+data.setCell(0, 1, 'validateTitleTest')
+data.setCell(0, 2, 'com.experian.qa.testcases.TermsAndConditionsTest')
+data.setCell(0, 3, 10178);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateTitleTest')
-data.setCell(1, 2, 'com.experian.qa.testcases.TermsAndConditionsTest')
-data.setCell(1, 3, 10154);
+data.setCell(1, 1, 'invalidBorrowAmountLessThen500Test')
+data.setCell(1, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
+data.setCell(1, 3, 5115);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidBorrowAmountMoreThen50000Test')
+data.setCell(2, 1, 'invalidBorrowAmountLessThen500Test')
 data.setCell(2, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(2, 3, 4768);
+data.setCell(2, 3, 4035);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invalidBorrowAmountLessThen500Test')
+data.setCell(3, 1, 'invalidBorrowAmountMoreThen50000Test')
 data.setCell(3, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(3, 3, 3860);
+data.setCell(3, 3, 4032);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyCreditCardTabtest')
-data.setCell(4, 2, 'com.experian.qa.testcases.HomePageTest')
-data.setCell(4, 3, 3857);
+data.setCell(4, 1, 'invalidBorrowAmountLessThen500Test')
+data.setCell(4, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
+data.setCell(4, 3, 3882);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'invalidBorrowAmountLessThen500Test')
 data.setCell(5, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(5, 3, 3848);
+data.setCell(5, 3, 3497);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'invalidBorrowAmountLessThen500Test')
-data.setCell(6, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(6, 3, 3788);
+data.setCell(6, 1, 'verifyCreditCardTabtest')
+data.setCell(6, 2, 'com.experian.qa.testcases.HomePageTest')
+data.setCell(6, 3, 3444);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'invalidBorrowAmountLessThen500Test')
-data.setCell(7, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(7, 3, 3769);
+data.setCell(7, 1, 'verifyLoansTabtest')
+data.setCell(7, 2, 'com.experian.qa.testcases.HomePageTest')
+data.setCell(7, 3, 3408);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyLoansTabtest')
+data.setCell(8, 1, 'verifyCarInsuranceTabtest')
 data.setCell(8, 2, 'com.experian.qa.testcases.HomePageTest')
-data.setCell(8, 3, 3026);
+data.setCell(8, 3, 1467);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -426,113 +468,115 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateTitleTest</span>
-                <span class="method-start">8430 ms</span>
+                <span class="method-start">9298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18585 ms</span>
+                <span class="method-start">19477 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.experian.qa.testcases.ConsolidatingOtherDebtsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">19736 ms</span>
+                <span class="method-start">20718 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountLessThen500Test(-3)</span>
-                <span class="method-start">27074 ms</span>
+                <span class="method-start">27885 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30862 ms</span>
+                <span class="method-start">31382 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">30977 ms</span>
+                <span class="method-start">31493 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountLessThen500Test(3)</span>
-                <span class="method-start">39701 ms</span>
+                <span class="method-start">39868 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43470 ms</span>
+                <span class="method-start">44983 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">43582 ms</span>
+                <span class="method-start">45098 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountLessThen500Test(3.5)</span>
-                <span class="method-start">51631 ms</span>
+                <span class="method-start">52814 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">55491 ms</span>
+                <span class="method-start">56696 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">55605 ms</span>
+                <span class="method-start">56815 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountLessThen500Test(text)</span>
-                <span class="method-start">63068 ms</span>
+                <span class="method-start">65799 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66916 ms</span>
+                <span class="method-start">69834 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">67081 ms</span>
+                <span class="method-start">69956 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountMoreThen50000Test</span>
-                <span class="method-start">74547 ms</span>
+                <span class="method-start">78213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79316 ms</span>
+                <span class="method-start">82245 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.experian.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">79422 ms</span>
+                <span class="method-start">82357 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyCarInsuranceTabtest</span>
-                <span class="method-start">86817 ms</span>
+                <span class="method-start">90678 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">97144 ms</span>
+                <span class="method-start">92159 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">98328 ms</span>
+                <span class="method-start">93324 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCreditCardTabtest</span>
-                <span class="method-start">105414 ms</span>
+                <span class="method-start">101521 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">109272 ms</span>
+                <span class="method-start">104966 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">110492 ms</span>
+                <span class="method-start">106153 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoansTabtest</span>
-                <span class="method-start">117983 ms</span>
+                <span class="method-start">114438 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121009 ms</span>
+                <span class="method-start">117847 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

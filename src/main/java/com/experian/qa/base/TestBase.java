@@ -52,7 +52,7 @@ public class TestBase {
 
         if(browser.equalsIgnoreCase("chrome")){
 
-            System.setProperty("webdriver.chrome.driver","Drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver","Drivers/chromedriver103");
 
 
             driver = new ChromeDriver();
