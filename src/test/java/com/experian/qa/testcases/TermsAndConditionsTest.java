@@ -3,12 +3,16 @@ package com.experian.qa.testcases;
 import com.experian.qa.base.TestBase;
 import com.experian.qa.pages.ConsolidatingOtherDebts;
 import com.experian.qa.pages.TermsAndConditions;
+import com.experian.qa.util.ScreenShot;
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+import static com.experian.qa.util.ScreenShot.captureScreenShot;
 
 public class TermsAndConditionsTest extends TestBase {
 
     TermsAndConditions termsAndConditions;
+
 
     public TermsAndConditionsTest(){
 
@@ -27,6 +31,8 @@ public class TermsAndConditionsTest extends TestBase {
     public void validateTitleTest(){
 
         String title = termsAndConditions.validateTitle();
+
+        captureScreenShot(driver,"validateTitleTest");
 
         Assert.assertEquals(prop.getProperty("termsAndConditionPageTitle"),title);
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="1" name="TestSuite" time="39.069" errors="0" skipped="0">
+<testsuite tests="9" failures="1" name="TestSuite" time="170.667" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="/opt/maven/apache-maven-3.8.2/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dbrowser=chrome"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -PSmokeTest -Dbrowser=chrome"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,32 +61,26 @@
     <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="validateTitleTest" time="10.179"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="3.497"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="5.115"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="3.881"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="4.035"/>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountMoreThen50000Test" time="4.032"/>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCarInsuranceTabtest" time="1.477">
-    <failure message="unknown error: cannot determine loading status
-from unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.53)
+  <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="validateTitleTest" time="44.796"/>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="10.674"/>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="37.338">
+    <failure message="element not interactable
+  (Session info: chrome=103.0.5060.114)
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:10e6:d3c2:186a:2500%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:1cad:499f:4a64:5fa9%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5046ef01c53e362212039d57d705d4a3, clickElement {id=a4f96787-318a-48cd-9e8a-e56c189e9e2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:53785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53785/devtoo..., se:cdpVersion: 103.0.5060.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (5046ef01c53e362212039d57d705d4a3)] -&gt; partial link text: insurance]
-Session ID: 5046ef01c53e362212039d57d705d4a3" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.53)
+Command: [79e5db785e3840a27b9e4902935948d7, clickElement {id=e10b3609-4bf8-4e32-b2ec-eb10c98ba5f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:57173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57173/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (79e5db785e3840a27b9e4902935948d7)] -&gt; xpath: //*[@id=&quot;search-form&quot;]/div[3]/div/div[2]/div/fieldset/div/div[1]/label]
+Session ID: 79e5db785e3840a27b9e4902935948d7" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=103.0.5060.114)
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:10e6:d3c2:186a:2500%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:1cad:499f:4a64:5fa9%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5046ef01c53e362212039d57d705d4a3, clickElement {id=a4f96787-318a-48cd-9e8a-e56c189e9e2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:53785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53785/devtoo..., se:cdpVersion: 103.0.5060.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (5046ef01c53e362212039d57d705d4a3)] -&gt; partial link text: insurance]
-Session ID: 5046ef01c53e362212039d57d705d4a3
+Command: [79e5db785e3840a27b9e4902935948d7, clickElement {id=e10b3609-4bf8-4e32-b2ec-eb10c98ba5f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:57173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57173/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (79e5db785e3840a27b9e4902935948d7)] -&gt; xpath: //*[@id=&quot;search-form&quot;]/div[3]/div/div[2]/div/fieldset/div/div[1]/label]
+Session ID: 79e5db785e3840a27b9e4902935948d7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -100,29 +94,35 @@ Session ID: 5046ef01c53e362212039d57d705d4a3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.experian.qa.testcases.HomePageTest.verifyCarInsuranceTabtest(HomePageTest.java:89)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.invalidBorrowAmountLessThen500Test(ConsolidatingOtherDebtsTest.java:47)
 </failure>
     <system-out>indside testbase constructor ..
+indside testbase constructor ..
 </system-out>
-    <system-err>Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 53657
+    <system-err>Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 63015
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 30, 2022 11:34:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 05, 2022 2:21:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Jun 30, 2022 11:34:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 05, 2022 2:21:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: a no-op implementation
-Jun 30, 2022 11:34:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 05, 2022 2:21:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 103.
-Jun 30, 2022 11:34:00 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Jul 05, 2022 2:21:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
 </system-err>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCreditCardTabtest" time="3.444"/>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyLoansTabtest" time="3.409"/>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="11.219"/>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="13.029"/>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountMoreThen50000Test" time="10.621"/>
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCarInsuranceTabtest" time="17.103"/>
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCreditCardTabtest" time="11.92"/>
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyLoansTabtest" time="13.967"/>
 </testsuite>

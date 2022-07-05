@@ -1,18 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 119.489 sec <<< FAILURE!
-verifyCarInsuranceTabtest(com.experian.qa.testcases.HomePageTest)  Time elapsed: 1.477 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.53)
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 396.338 sec <<< FAILURE!
+invalidBorrowAmountLessThen500Test(com.experian.qa.testcases.ConsolidatingOtherDebtsTest)  Time elapsed: 37.338 sec  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=103.0.5060.114)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'LAMU02FN5ZCMD6R.uhc.com.', ip: 'fe80:0:0:0:10e6:d3c2:186a:2500%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
+System info: host: 'LAMU02FN5ZCMD6R.uhc.com.', ip: 'fe80:0:0:0:1cad:499f:4a64:5fa9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5046ef01c53e362212039d57d705d4a3, clickElement {id=a4f96787-318a-48cd-9e8a-e56c189e9e2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:53785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53785/devtoo..., se:cdpVersion: 103.0.5060.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (5046ef01c53e362212039d57d705d4a3)] -> partial link text: insurance]
-Session ID: 5046ef01c53e362212039d57d705d4a3
+Command: [79e5db785e3840a27b9e4902935948d7, clickElement {id=e10b3609-4bf8-4e32-b2ec-eb10c98ba5f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:57173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57173/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (79e5db785e3840a27b9e4902935948d7)] -> xpath: //*[@id="search-form"]/div[3]/div/div[2]/div/fieldset/div/div[1]/label]
+Session ID: 79e5db785e3840a27b9e4902935948d7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -26,10 +25,11 @@ Session ID: 5046ef01c53e362212039d57d705d4a3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.experian.qa.testcases.HomePageTest.verifyCarInsuranceTabtest(HomePageTest.java:89)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.invalidBorrowAmountLessThen500Test(ConsolidatingOtherDebtsTest.java:47)
 
