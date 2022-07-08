@@ -108,7 +108,7 @@ public class HomePageTest extends TestBase {
 
     }
 
-    @AfterMethod(groups = {"SmokeTest","FunctionalTest"})
+    @AfterMethod(groups = {"SmokeTest","FunctionalTest"},alwaysRun = true)
     public void tearDown(){
 
         driver.quit();

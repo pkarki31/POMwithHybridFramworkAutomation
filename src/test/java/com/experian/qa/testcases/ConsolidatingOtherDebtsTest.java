@@ -142,7 +142,7 @@ ConsolidatingOtherDebtsTest extends TestBase {
 
 
 
-    @AfterMethod(groups = {"FunctionalTest"})
+    @AfterMethod(groups = {"FunctionalTest"} , alwaysRun = true)
         public void tearDown(){
 
             driver.close();

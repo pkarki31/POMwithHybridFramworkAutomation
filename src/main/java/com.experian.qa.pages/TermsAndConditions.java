@@ -20,6 +20,7 @@ public class TermsAndConditions extends TestBase {
     @FindBy(xpath="//*[text()='Terms & Conditions']")
     WebElement termsAndConditionLink;
 
+
     @FindBy(id="ensCloseBanner")
     public WebElement cookiesPrompt;
 

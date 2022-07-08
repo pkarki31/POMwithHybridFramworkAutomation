@@ -37,7 +37,7 @@ public class TermsAndConditionsTest extends TestBase {
         Assert.assertEquals(prop.getProperty("termsAndConditionPageTitle"),title);
     }
 
-    @AfterMethod(groups = {"SmokeTest","FunctionalTest"})
+    @AfterMethod(groups = {"SmokeTest","FunctionalTest"} ,alwaysRun = true)
     public void tearDown(){
 
         driver.quit();

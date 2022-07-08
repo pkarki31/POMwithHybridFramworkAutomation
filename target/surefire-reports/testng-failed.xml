@@ -3,11 +3,28 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
+      <class name="com.experian.qa.testcases.TermsAndConditionsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="validateTitleTest"/>
+        </methods>
+      </class> <!-- com.experian.qa.testcases.TermsAndConditionsTest -->
+      <class name="com.experian.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyLoansTabtest"/>
+          <include name="verifyCreditCardTabtest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyCarInsuranceTabtest"/>
+        </methods>
+      </class> <!-- com.experian.qa.testcases.HomePageTest -->
       <class name="com.experian.qa.testcases.ConsolidatingOtherDebtsTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="invalidBorrowAmountLessThen500Test" invocation-numbers="1"/>
+          <include name="invalidBorrowAmountMoreThen50000Test"/>
+          <include name="invalidBorrowAmountLessThen500Test"/>
         </methods>
       </class> <!-- com.experian.qa.testcases.ConsolidatingOtherDebtsTest -->
     </classes>
