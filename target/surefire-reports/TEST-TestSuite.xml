@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="27" failures="3" name="TestSuite" time="0.371" errors="0" skipped="24">
+<testsuite tests="22" failures="7" name="TestSuite" time="71.305" errors="0" skipped="15">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -61,18 +61,24 @@
     <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="setup" time="0.359">
-    <failure message="&apos;com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: &apos;com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)&apos;
-	at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:123)
-	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:118)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:93)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:48)
-	at com.experian.qa.base.TestBase.initialization(TestBase.java:58)
-	at com.experian.qa.testcases.TermsAndConditionsTest.setup(TermsAndConditionsTest.java:26)
+  <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="setup" time="26.004">
+    <failure message="org/openqa/selenium/interactions/internal/Locatable" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at com.experian.qa.pages.TermsAndConditions.&lt;init&gt;(TermsAndConditions.java:16)
+	at com.experian.qa.testcases.TermsAndConditionsTest.setup(TermsAndConditionsTest.java:27)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.interactions.internal.Locatable
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 50 more
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4fb64261
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@12c8a2c0
+indside testbase constructor ..
 indside testbase constructor ..
 indside testbase constructor ..
 indside testbase constructor ..
@@ -81,102 +87,241 @@ indside testbase constructor ..
     <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 49257
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 08, 2022 6:16:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2022 6:16:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: a no-op implementation
+Jul 08, 2022 6:16:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 103.
+Jul 08, 2022 6:16:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
 </system-err>
   </testcase>
   <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="validateTitleTest" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.TermsAndConditionsTest" name="tearDown" time="0">
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="24.396">
+    <failure message="org/openqa/selenium/interactions/internal/Locatable" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at com.experian.qa.pages.ConsolidatingOtherDebts.&lt;init&gt;(ConsolidatingOtherDebts.java:43)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.setup(ConsolidatingOtherDebtsTest.java:34)
+</failure>
+    <system-out>indside testbase constructor ..
+</system-out>
+    <system-err>Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 50439
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 08, 2022 6:17:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2022 6:17:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: a no-op implementation
+Jul 08, 2022 6:17:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 103.
+Jul 08, 2022 6:17:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
+</system-err>
+  </testcase>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0.004">
-    <failure message="&apos;com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: &apos;com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)&apos;
-	at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:123)
-	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:118)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:93)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:48)
-	at com.experian.qa.base.TestBase.initialization(TestBase.java:58)
-	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.setup(ConsolidatingOtherDebtsTest.java:33)
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0.081">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0.097">
+    <failure message="invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:428)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.tearDown(ConsolidatingOtherDebtsTest.java:148)
 </failure>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0">
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0.097">
     <skipped/>
   </testcase>
   <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0">
-    <skipped/>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0.005">
+    <failure message="invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:428)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.tearDown(ConsolidatingOtherDebtsTest.java:148)
+</failure>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0">
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0.005">
     <skipped/>
   </testcase>
   <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0.001">
-    <skipped/>
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0.004">
+    <failure message="invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:428)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.tearDown(ConsolidatingOtherDebtsTest.java:148)
+</failure>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountLessThen500Test" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0">
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="setup" time="0.005">
     <skipped/>
   </testcase>
   <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="invalidBorrowAmountMoreThen50000Test" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="setup" time="0.002">
-    <failure message="&apos;com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: &apos;com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)&apos;
-	at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:123)
-	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.&lt;init&gt;(ChromeDriver.java:118)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:93)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:48)
-	at com.experian.qa.base.TestBase.initialization(TestBase.java:58)
-	at com.experian.qa.testcases.HomePageTest.setup(HomePageTest.java:25)
+  <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="tearDown" time="0.004">
+    <failure message="invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47044171b4c00c08678d4ed3b230f51b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:428)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.tearDown(ConsolidatingOtherDebtsTest.java:148)
 </failure>
+  </testcase>
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="setup" time="19.408">
+    <failure message="org/openqa/selenium/interactions/internal/Locatable" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at com.experian.qa.pages.HomePage.&lt;init&gt;(HomePage.java:12)
+	at com.experian.qa.testcases.HomePageTest.setup(HomePageTest.java:26)
+</failure>
+    <system-out>indside testbase constructor ..
+</system-out>
+    <system-err>Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 56337
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 08, 2022 6:17:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2022 6:17:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: a no-op implementation
+Jul 08, 2022 6:17:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 103.
+Jul 08, 2022 6:17:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
+</system-err>
   </testcase>
   <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCarInsuranceTabtest" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="tearDown" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="setup" time="0.001">
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="setup" time="1.198">
     <skipped/>
   </testcase>
   <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyCreditCardTabtest" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="tearDown" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="setup" time="0">
+  <testcase classname="com.experian.qa.testcases.HomePageTest" name="setup" time="0.001">
     <skipped/>
   </testcase>
   <testcase classname="com.experian.qa.testcases.HomePageTest" name="verifyLoansTabtest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.experian.qa.testcases.HomePageTest" name="tearDown" time="0.001">
     <skipped/>
   </testcase>
 </testsuite>
