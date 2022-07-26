@@ -42,14 +42,14 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
   <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="@AfterMethod tearDown" time="0.079">
     <failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
 Build info: version: &amp;apos;4.1.1&amp;apos;, revision: &amp;apos;e8fcc2cecf&amp;apos;
-System info: host: &amp;apos;LAMU02FN5ZCMD6R.uhc.com.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
+System info: host: &amp;apos;test.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: 47044171b4c00c08678d4ed3b230f51b">
       <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAMU02FN5ZCMD6R.uhc.com.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
+System info: host: 'test.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
@@ -75,14 +75,14 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
   <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="@AfterMethod tearDown" time="0.003">
     <failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
 Build info: version: &amp;apos;4.1.1&amp;apos;, revision: &amp;apos;e8fcc2cecf&amp;apos;
-System info: host: &amp;apos;LAMU02FN5ZCMD6R.uhc.com.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
+System info: host: &amp;apos;test.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: 47044171b4c00c08678d4ed3b230f51b">
       <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAMU02FN5ZCMD6R.uhc.com.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
+System info: host: 'test.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
@@ -108,14 +108,14 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
   <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="@AfterMethod tearDown" time="0.003">
     <failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
 Build info: version: &amp;apos;4.1.1&amp;apos;, revision: &amp;apos;e8fcc2cecf&amp;apos;
-System info: host: &amp;apos;LAMU02FN5ZCMD6R.uhc.com.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
+System info: host: &amp;apos;test.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: 47044171b4c00c08678d4ed3b230f51b">
       <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAMU02FN5ZCMD6R.uhc.com.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
+System info: host: 'test.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
@@ -141,14 +141,14 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
   <testcase classname="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" name="@AfterMethod tearDown" time="0.002">
     <failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id
 Build info: version: &amp;apos;4.1.1&amp;apos;, revision: &amp;apos;e8fcc2cecf&amp;apos;
-System info: host: &amp;apos;LAMU02FN5ZCMD6R.uhc.com.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
+System info: host: &amp;apos;test.&amp;apos;, ip: &amp;apos;fe80:0:0:0:188a:d6e3:7569:808%en0&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;11.5&amp;apos;, java.version: &amp;apos;11.0.11&amp;apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: 47044171b4c00c08678d4ed3b230f51b">
       <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAMU02FN5ZCMD6R.uhc.com.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
+System info: host: 'test.', ip: 'fe80:0:0:0:188a:d6e3:7569:808%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
