@@ -7,26 +7,9 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="invalidBorrowAmountMoreThen50000Test"/>
-          <include name="invalidBorrowAmountLessThen500Test"/>
+          <include name="invalidBorrowAmountLessThen500Test" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.experian.qa.testcases.ConsolidatingOtherDebtsTest -->
-      <class name="com.experian.qa.testcases.TermsAndConditionsTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="validateTitleTest"/>
-        </methods>
-      </class> <!-- com.experian.qa.testcases.TermsAndConditionsTest -->
-      <class name="com.experian.qa.testcases.HomePageTest">
-        <methods>
-          <include name="verifyLoansTabtest"/>
-          <include name="verifyCreditCardTabtest"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifyCarInsuranceTabtest"/>
-        </methods>
-      </class> <!-- com.experian.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

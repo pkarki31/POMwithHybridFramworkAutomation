@@ -29,9 +29,9 @@ public class HomePageTest extends TestBase {
     @Test(groups = {"SmokeTest","FunctionalTest"})
     public void verifyLoansTabtest(){
 
-        home.cookiesPrompt.click();
+        home.clickOnCookiesPrompt();
 
-        home.loansTab.click();
+        home.clickOnLoanTab();
 
         String loanTitle = driver.getTitle();
 
@@ -56,9 +56,9 @@ public class HomePageTest extends TestBase {
     @Test(groups = {"SmokeTest","FunctionalTest"})
     public void verifyCreditCardTabtest(){
 
-        home.cookiesPrompt.click();
+        home.clickOnCookiesPrompt();
 
-        home.creditCardsTab.click();
+        home.clickOnCreditCardsTab();
 
         String creditCardTitle = driver.getTitle();
 
@@ -84,9 +84,9 @@ public class HomePageTest extends TestBase {
     @Test(groups = {"SmokeTest","FunctionalTest"})
     public void verifyCarInsuranceTabtest(){
 
-        home.cookiesPrompt.click();
+        home.clickOnCookiesPrompt();
 
-        home.carInsurance.click();
+        home.clickOnCarInsurance();
 
         String carInsuranceTitle = driver.getTitle();
 

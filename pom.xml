@@ -20,8 +20,24 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.1.2</version>
+            <version>4.3.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v101 -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v101</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+
+
 
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
@@ -30,12 +46,7 @@
             <version>7.5</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools</artifactId>
-            <version>4.0.0-beta-4</version>
-        </dependency>
+
 
 
         <dependency>
@@ -53,7 +64,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
-            <version>3.14.0</version>
+            <version>4.3.0</version>
         </dependency>
 
 

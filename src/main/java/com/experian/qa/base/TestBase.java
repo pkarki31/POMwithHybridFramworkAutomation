@@ -52,6 +52,8 @@ public class TestBase {
 
         if(browser.equalsIgnoreCase("chrome")){
 
+            System.out.println("Inside initialization of chrome...");
+
             System.setProperty("webdriver.chrome.driver","Drivers/chromedriver103");
 
 

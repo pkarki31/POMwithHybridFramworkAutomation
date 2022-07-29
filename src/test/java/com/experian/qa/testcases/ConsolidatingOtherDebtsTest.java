@@ -40,25 +40,24 @@ ConsolidatingOtherDebtsTest extends TestBase {
     public void invalidBorrowAmountLessThen500Test(String amount) {
 
 
-            homePage.cookiesPrompt.click();
+            homePage.clickOnCookiesPrompt();
 
-            homePage.loansTab.click();
+            homePage.clickOnLoanTab();
 
-            debts.consolidatingOtherDebtsIcon.click();
+            debts.clickOnConsolidatingOtherDebtsIcon();
 
+            debts.sendBorrowAmountInput(amount);
 
-            debts.borrowAmountInput.sendKeys(amount);
+            debts.sendLoanPeriodInput("1");
 
-            debts.loanPeriodInput.sendKeys("1");
-
-            debts.continueButton.click();
+            debts.clickOnContinueButton();
 
 
 
         try {
 
 
-            String errorMsg = debts.invalidAmountErrorMsg.getText();
+            String errorMsg = debts.getTextForInvalidAmountErrorMsg();
 
 
 
@@ -98,21 +97,21 @@ ConsolidatingOtherDebtsTest extends TestBase {
     @Test(groups = {"FunctionalTest"})
     public void invalidBorrowAmountMoreThen50000Test() {
 
-        homePage.cookiesPrompt.click();
+        homePage.clickOnCookiesPrompt();
 
-        homePage.loansTab.click();
+        homePage.clickOnLoanTab();
 
-        debts.consolidatingOtherDebtsIcon.click();
+        debts.clickOnConsolidatingOtherDebtsIcon();
 
-        debts.borrowAmountInput.sendKeys("50001");
+        debts.sendBorrowAmountInput("50001");
 
-        debts.borrowAmountInput.sendKeys(Keys.TAB);
+      //  debts.borrowAmountInput.sendKeys(Keys.TAB);
 
-        debts.loanPeriodInput.sendKeys("1");
+        debts.sendLoanPeriodInput("1");
 
-        debts.continueButton.click();
+        debts.clickOnContinueButton();
 
-        debts.homeownerWithMortgagefalse.click();
+        debts.clickOnHomeownerWithMortgageFalse();
 
         try {
 

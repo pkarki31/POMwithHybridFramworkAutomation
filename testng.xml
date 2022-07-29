@@ -8,13 +8,20 @@
         <groups>
             <run>
                 <include name="SmokeTest"></include>
+
             </run>
+
 
         </groups>
         <packages>
 
             <package name="com.experian.qa.testcases"/>
+
         </packages>
+
+<!--        <classes>-->
+<!--            <class name="com.experian.qa.testcases.TermsAndConditionsTest"></class>-->
+<!--        </classes>-->
 
 
     </test>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-skipped">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,61 +93,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,  9 skipped,  </span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Command_line_suite">
+                    <div class="method-list-content failed suite-Command_line_suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(3)">invalidBorrowAmountLessThen500Test(3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(-3)">invalidBorrowAmountLessThen500Test(-3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(3)">invalidBorrowAmountLessThen500Test(3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(text)">invalidBorrowAmountLessThen500Test(text)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountLessThen500Test(3.5)">invalidBorrowAmountLessThen500Test(3.5)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.ConsolidatingOtherDebtsTest" class="method navigator-link" hash-for-method="invalidBorrowAmountMoreThen50000Test">invalidBorrowAmountMoreThen50000Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.TermsAndConditionsTest" class="method navigator-link" hash-for-method="validateTitleTest">validateTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyCarInsuranceTabtest">verifyCarInsuranceTabtest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyCreditCardTabtest">verifyCreditCardTabtest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.experian.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyLoansTabtest">verifyLoansTabtest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -159,9 +168,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-skipped">
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.experian.qa.testcases.ConsolidatingOtherDebtsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBorrowAmountLessThen500Test(3)">
+                  </a> <!-- invalidBorrowAmountLessThen500Test(3) -->
+                  <span class="method-name">invalidBorrowAmountLessThen500Test</span>
+                  <span class="parameters">(3)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:1c6b:3325:a19e:afb7%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed44050dcef8fc8f76491ce701db0ba6, clickElement {id=24cefccb-b757-48e0-907b-f418804afd6c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (ed44050dcef8fc8f76491ce701db0ba6)] -&gt; partial link text: loans]
+Session ID: ed44050dcef8fc8f76491ce701db0ba6
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.experian.qa.pages.HomePage.clickOnLoanTab(HomePage.java:41)
+	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.invalidBorrowAmountLessThen500Test(ConsolidatingOtherDebtsTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 58 more
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.experian.qa.testcases.ConsolidatingOtherDebtsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -171,38 +230,6 @@
                   </a> <!-- invalidBorrowAmountLessThen500Test(-3) -->
                   <span class="method-name">invalidBorrowAmountLessThen500Test</span>
                   <span class="parameters">(-3)</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.ConsolidatingOtherDebts.&lt;init&gt;(ConsolidatingOtherDebts.java:43)
-	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.setup(ConsolidatingOtherDebtsTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidBorrowAmountLessThen500Test(3)">
-                  </a> <!-- invalidBorrowAmountLessThen500Test(3) -->
-                  <span class="method-name">invalidBorrowAmountLessThen500Test</span>
-                  <span class="parameters">(3)</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.ConsolidatingOtherDebts.&lt;init&gt;(ConsolidatingOtherDebts.java:43)
-	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.setup(ConsolidatingOtherDebtsTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -211,18 +238,6 @@
                   </a> <!-- invalidBorrowAmountLessThen500Test(text) -->
                   <span class="method-name">invalidBorrowAmountLessThen500Test</span>
                   <span class="parameters">(text)</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.ConsolidatingOtherDebts.&lt;init&gt;(ConsolidatingOtherDebts.java:43)
-	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.setup(ConsolidatingOtherDebtsTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -231,18 +246,6 @@
                   </a> <!-- invalidBorrowAmountLessThen500Test(3.5) -->
                   <span class="method-name">invalidBorrowAmountLessThen500Test</span>
                   <span class="parameters">(3.5)</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.ConsolidatingOtherDebts.&lt;init&gt;(ConsolidatingOtherDebts.java:43)
-	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.setup(ConsolidatingOtherDebtsTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -250,66 +253,13 @@
                   <a name="invalidBorrowAmountMoreThen50000Test">
                   </a> <!-- invalidBorrowAmountMoreThen50000Test -->
                   <span class="method-name">invalidBorrowAmountMoreThen50000Test</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;LAMU02FN5ZCMD6R.uhc.com.&apos;, ip: &apos;fe80:0:0:0:188a:d6e3:7569:808%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [47044171b4c00c08678d4ed3b230f51b, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/tq/78q9w4fj581...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55739/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 47044171b4c00c08678d4ed3b230f51b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:428)
-	at com.experian.qa.testcases.ConsolidatingOtherDebtsTest.tearDown(ConsolidatingOtherDebtsTest.java:148)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 46 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.experian.qa.testcases.TermsAndConditionsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateTitleTest">
-                  </a> <!-- validateTitleTest -->
-                  <span class="method-name">validateTitleTest</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.TermsAndConditions.&lt;init&gt;(TermsAndConditions.java:16)
-	at com.experian.qa.testcases.TermsAndConditionsTest.setup(TermsAndConditionsTest.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.interactions.internal.Locatable
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-	... 50 more
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.experian.qa.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -318,18 +268,6 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.interactions.in
                   <a name="verifyCarInsuranceTabtest">
                   </a> <!-- verifyCarInsuranceTabtest -->
                   <span class="method-name">verifyCarInsuranceTabtest</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.HomePage.&lt;init&gt;(HomePage.java:12)
-	at com.experian.qa.testcases.HomePageTest.setup(HomePageTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -337,18 +275,6 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.interactions.in
                   <a name="verifyCreditCardTabtest">
                   </a> <!-- verifyCreditCardTabtest -->
                   <span class="method-name">verifyCreditCardTabtest</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.HomePage.&lt;init&gt;(HomePage.java:12)
-	at com.experian.qa.testcases.HomePageTest.setup(HomePageTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -356,22 +282,25 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.interactions.in
                   <a name="verifyLoansTabtest">
                   </a> <!-- verifyLoansTabtest -->
                   <span class="method-name">verifyLoansTabtest</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/interactions/internal/Locatable
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-	at com.experian.qa.pages.HomePage.&lt;init&gt;(HomePage.java:12)
-	at com.experian.qa.testcases.HomePageTest.setup(HomePageTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.experian.qa.testcases.TermsAndConditionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTitleTest">
+                  </a> <!-- validateTitleTest -->
+                  <span class="method-name">validateTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -476,46 +405,46 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCreditCardTabtest')
-data.setCell(0, 2, 'com.experian.qa.testcases.HomePageTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'invalidBorrowAmountLessThen500Test')
+data.setCell(0, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
+data.setCell(0, 3, 180074);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalidBorrowAmountLessThen500Test')
-data.setCell(1, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'validateTitleTest')
+data.setCell(1, 2, 'com.experian.qa.testcases.TermsAndConditionsTest')
+data.setCell(1, 3, 17080);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidBorrowAmountLessThen500Test')
-data.setCell(2, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'verifyCarInsuranceTabtest')
+data.setCell(2, 2, 'com.experian.qa.testcases.HomePageTest')
+data.setCell(2, 3, 15052);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoansTabtest')
-data.setCell(3, 2, 'com.experian.qa.testcases.HomePageTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'invalidBorrowAmountLessThen500Test')
+data.setCell(3, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
+data.setCell(3, 3, 11781);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'invalidBorrowAmountLessThen500Test')
 data.setCell(4, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 11701);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'invalidBorrowAmountLessThen500Test')
+data.setCell(5, 1, 'invalidBorrowAmountMoreThen50000Test')
 data.setCell(5, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 11289);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateTitleTest')
-data.setCell(6, 2, 'com.experian.qa.testcases.TermsAndConditionsTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'invalidBorrowAmountLessThen500Test')
+data.setCell(6, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
+data.setCell(6, 3, 10633);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyCarInsuranceTabtest')
+data.setCell(7, 1, 'verifyCreditCardTabtest')
 data.setCell(7, 2, 'com.experian.qa.testcases.HomePageTest')
-data.setCell(7, 3, 0);
+data.setCell(7, 3, 10561);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'invalidBorrowAmountMoreThen50000Test')
-data.setCell(8, 2, 'com.experian.qa.testcases.ConsolidatingOtherDebtsTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'verifyLoansTabtest')
+data.setCell(8, 2, 'com.experian.qa.testcases.HomePageTest')
+data.setCell(8, 3, 10073);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -543,133 +472,121 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.experian.qa.testcases.TermsAndConditionsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateTitleTest</span>
-                <span class="method-start">25747 ms</span>
+                <span class="method-start">18297 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25748 ms</span>
+                <span class="method-start">35378 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.experian.qa.testcases.ConsolidatingOtherDebtsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">26947 ms</span>
+                <span class="method-start">36565 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountLessThen500Test(-3)</span>
-                <span class="method-start">50144 ms</span>
+                <span class="method-start">53631 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50144 ms</span>
+                <span class="method-start">64264 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">invalidBorrowAmountLessThen500Test(3)</span>
-                <span class="method-start">50224 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">50224 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">64380 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">invalidBorrowAmountLessThen500Test(3)</span>
+                <span class="method-start">82503 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50225 ms</span>
+                <span class="method-start">262591 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">50322 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">372937 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountLessThen500Test(3.5)</span>
-                <span class="method-start">50322 ms</span>
+                <span class="method-start">391794 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50322 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">50327 ms</span>
+                <span class="method-start">403575 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">50327 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">403688 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountLessThen500Test(text)</span>
-                <span class="method-start">50327 ms</span>
+                <span class="method-start">420599 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">50331 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50332 ms</span>
+                <span class="method-start">432300 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">432458 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidBorrowAmountMoreThen50000Test</span>
-                <span class="method-start">50332 ms</span>
+                <span class="method-start">448263 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">459552 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.experian.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">50336 ms</span>
+                <span class="method-start">459667 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCarInsuranceTabtest</span>
-                <span class="method-start">69740 ms</span>
+                <span class="method-start">477925 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">69741 ms</span>
+                <span class="method-start">492978 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">70937 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">494145 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">70938 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyCreditCardTabtest</span>
-                <span class="method-start">70938 ms</span>
+                <span class="method-start">510470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">70939 ms</span>
+                <span class="method-start">521031 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">70939 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">522192 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoansTabtest</span>
-                <span class="method-start">70939 ms</span>
+                <span class="method-start">538526 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">548600 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

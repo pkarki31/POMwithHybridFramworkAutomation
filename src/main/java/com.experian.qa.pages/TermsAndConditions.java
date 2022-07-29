@@ -11,23 +11,30 @@ import java.util.ArrayList;
 public class TermsAndConditions extends TestBase {
 
 
+    HomePage homePage;
+
+
     public TermsAndConditions(){
 
         PageFactory.initElements(driver,this);
+
+        homePage= new HomePage();
     }
 
 
     @FindBy(xpath="//*[text()='Terms & Conditions']")
-    WebElement termsAndConditionLink;
+    private WebElement termsAndConditionLink;
 
 
     @FindBy(id="ensCloseBanner")
-    public WebElement cookiesPrompt;
+    private WebElement cookiesPrompt;
 
     public String validateTitle()  {
 
         try {
-            cookiesPrompt.click();
+            //cookiesPrompt.click();
+
+            homePage.clickOnCookiesPrompt();
 
             ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 

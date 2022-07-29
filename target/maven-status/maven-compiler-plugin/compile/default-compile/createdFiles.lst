@@ -1,3 +1,4 @@
+com/experian/qa/util/ScreenShot.class
 com/experian/qa/pages/CreditCards.class
 com/experian/qa/pages/Mortgages.class
 com/experian/qa/pages/ConsolidatingOtherDebts.class

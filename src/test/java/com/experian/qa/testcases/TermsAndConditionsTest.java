@@ -27,6 +27,7 @@ public class TermsAndConditionsTest extends TestBase {
         termsAndConditions = new TermsAndConditions();
     }
 
+
     @Test(groups = {"SmokeTest","FunctionalTest"})
     public void validateTitleTest(){
 

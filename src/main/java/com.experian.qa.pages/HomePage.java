@@ -13,22 +13,41 @@ public class HomePage extends TestBase {
     }
 
     @FindBy(id="ensCloseBanner")
-    public WebElement cookiesPrompt;
+    private WebElement cookiesPrompt;
 
     @FindBy(partialLinkText="credit")
-    public WebElement creditCardsTab;
+    private WebElement creditCardsTab;
 
     @FindBy(partialLinkText="loans")
-    public WebElement loansTab;
+    private WebElement loansTab;
 
     @FindBy(partialLinkText="car-finance")
-    public WebElement carFinance;
+    private WebElement carFinance;
 
     @FindBy(partialLinkText="mortgages")
-    public WebElement mortgages;
+    private WebElement mortgages;
 
     @FindBy(partialLinkText="insurance")
-    public WebElement carInsurance;
+    private WebElement carInsurance;
+
+
+    public void clickOnCookiesPrompt(){
+
+        cookiesPrompt.click();
+
+    }
+
+    public void clickOnLoanTab(){
+        loansTab.click();
+    }
+
+    public void clickOnCarInsurance(){
+        carInsurance.click();
+    }
+
+    public void clickOnCreditCardsTab(){
+        creditCardsTab.click();
+    }
 
 
 
